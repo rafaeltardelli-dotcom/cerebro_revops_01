@@ -1,0 +1,68 @@
+[
+  {
+    "file": "cerebro/empresa/contexto_nuvemshop_01.md",
+    "title": "Contexto Nuvemshop",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/empresa/arquitetura_hubspot_01.md",
+    "title": "Arquitetura HubSpot",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/empresa/brandbook_nuvemshop_01.md",
+    "title": "Brandbook Nuvemshop",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/areas/contexto_agencies_01.md",
+    "title": "Contexto Agências",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/areas/contexto_tech_partners_01.md",
+    "title": "Contexto Tech Partners",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/areas/contexto_affiliate_v1.md",
+    "title": "Contexto Afiliados",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/areas/metricas_agencias_01.md",
+    "title": "Métricas Agências",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/areas/blueprint_time_revops.md",
+    "title": "Blueprint Time RevOps",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/projects/project_portal_01.md",
+    "title": "Project Portal",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "cerebro/projects/strategic_projects_agencies_mx_01.md",
+    "title": "Strategic Projects Agencies MX",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  },
+  {
+    "file": "onboarding/README_CEREBRO.md",
+    "title": "README Cérebro RevOps",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
+  }
+]
