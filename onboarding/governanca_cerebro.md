@@ -1,7 +1,7 @@
 # Governança do Partnerships Ops & Analytics
 
 **Dono:** Time RevOps  
-**Última revisão:** 2026-04
+**Última revisão:** 2026-04-28
 
 ## O que é o Partnerships Ops & Analytics
 
