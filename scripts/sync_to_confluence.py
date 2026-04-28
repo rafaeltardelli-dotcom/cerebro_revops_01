@@ -28,7 +28,28 @@ REPO_ROOT = Path(__file__).parent.parent
 
 def md_to_confluence(md_text: str) -> str:
     """Minimal markdown → Confluence Storage Format conversion."""
-    text = md_text
+
+    # Extract fenced code blocks before escaping so their content is preserved
+    code_blocks = {}
+    def extract_code(m):
+        key = f"__CODEBLOCK_{len(code_blocks)}__"
+        lang = m.group(1) or "none"
+        code_blocks[key] = (
+            f'<ac:structured-macro ac:name="code">'
+            f'<ac:parameter ac:name="language">{lang}</ac:parameter>'
+            f"<ac:plain-text-body><![CDATA[{m.group(2).rstrip()}]]></ac:plain-text-body>"
+            f"</ac:structured-macro>"
+        )
+        return key
+
+    text = re.sub(r"```(\w*)\n([\s\S]*?)```", extract_code, md_text)
+
+    # Escape XML special chars in plain text (prevents 400 on & < >)
+    text = text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    # Restore code blocks (already valid XML)
+    for key, block in code_blocks.items():
+        text = text.replace(key, block)
 
     # Headings
     for level in range(6, 0, -1):
@@ -46,20 +67,21 @@ def md_to_confluence(md_text: str) -> str:
     # Inline code
     text = re.sub(r"`(.+?)`", r"<code>\1</code>", text)
 
-    # Fenced code blocks
-    text = re.sub(
-        r"```(\w*)\n([\s\S]*?)```",
-        lambda m: (
-            f'<ac:structured-macro ac:name="code">'
-            f'<ac:parameter ac:name="language">{m.group(1) or "none"}</ac:parameter>'
-            f"<ac:plain-text-body><![CDATA[{m.group(2).rstrip()}]]></ac:plain-text-body>"
-            f"</ac:structured-macro>"
-        ),
-        text,
-    )
-
     # Horizontal rule
     text = re.sub(r"^---+$", "<hr/>", text, flags=re.MULTILINE)
+
+    # Tables
+    def replace_table(m):
+        rows = [r for r in m.group(0).strip().splitlines() if not re.match(r"^\|[\s:|_-]+\|$", r.strip())]
+        html = "<table>"
+        for i, row in enumerate(rows):
+            cells = [c.strip() for c in row.strip().strip("|").split("|")]
+            tag = "th" if i == 0 else "td"
+            html += "<tr>" + "".join(f"<{tag}>{c}</{tag}>" for c in cells) + "</tr>"
+        html += "</table>"
+        return html
+
+    text = re.sub(r"(^\|.+\|\n?)+", replace_table, text, flags=re.MULTILINE)
 
     # Unordered lists (simple single-level)
     def replace_ul(m):
