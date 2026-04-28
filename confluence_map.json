@@ -70,5 +70,11 @@
     "title": "Governança do Partnerships Ops & Analytics",
     "space_key": "OPSAN",
     "parent_page_id": "1197768717"
+  },
+  {
+    "file": "onboarding/guia_github_confluence.md",
+    "title": "Guia para Integrar GitHub ao Confluence",
+    "space_key": "OPSAN",
+    "parent_page_id": "1197768717"
   }
 ]
