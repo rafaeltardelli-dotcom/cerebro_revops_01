@@ -28,4 +28,4 @@ Estas regras definem o "SLA" de operação no CRM e devem ser estritamente segui
 ## 4. Estratégia de Enablement (Descentralização)
 Para evitar que o *Partner Manager* local seja o único ponto de falha (SPOF) no fluxo de informações:
 1.  **Treinamento Cross-Team:** Sessão técnica agendada com toda a equipe do MX para nivelamento sobre a arquitetura do HubSpot e leitura dos Dashboards.
-2.  **Documentação SSOT:** Utilização do Cérebro RevOps como base de conhecimento assíncrona para consultas de regras de roteamento e atribuição.
+2.  **Documentação SSOT:** Utilização do Partnerships Ops & Analytics como base de conhecimento assíncrona para consultas de regras de roteamento e atribuição.

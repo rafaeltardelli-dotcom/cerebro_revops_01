@@ -1,6 +1,6 @@
-# Cérebro RevOps — Cérebro de IA
+# Partnerships Ops & Analytics
 
-Repositório central para **contexto**, **skills** e **rotinas** utilizados pelos agentes, organizado de forma modular: regra de negócio (empresa e áreas) separada do motor de execução (rotinas e skills), alinhado ao padrão Imersão OpenClaw.
+Repositório central para **contexto**, **skills** e **rotinas** utilizados pelos agentes, organizado de forma modular: regra de negócio (empresa e áreas) separada do motor de execução (rotinas e skills).
 
 ## Tríade operacional
 
@@ -10,7 +10,7 @@ Repositório central para **contexto**, **skills** e **rotinas** utilizados pelo
 
 | Pasta | Função |
 |--------|--------|
-| `onboarding/` | Material de entrada, setup e boas-vindas ao uso do cérebro. |
+| `onboarding/` | Material de entrada, setup e boas-vindas ao repositório. |
 | `cerebro/empresa/` | Identidade, brandbook e diretrizes corporativas. |
 | `cerebro/areas/` | Contexto por área de negócio (ex.: RevOps, Affiliates). |
 | `cerebro/agentes/` | Perfis, persona e instruções de comportamento dos agentes. |

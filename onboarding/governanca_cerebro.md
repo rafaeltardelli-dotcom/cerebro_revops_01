@@ -1,17 +1,17 @@
-# Governança do Cérebro RevOps
+# Governança do Partnerships Ops & Analytics
 
 **Dono:** Time RevOps  
 **Última revisão:** 2026-04
 
-## O que é o Cérebro
+## O que é o Partnerships Ops & Analytics
 
-O Cérebro é a base de conhecimento do time de RevOps. Ele vive no GitHub (`cerebro_revops_01`) e é sincronizado automaticamente com o Confluence (espaço **Ops & Analytics → Cerebro RevOps**) a cada `git push`.
+É a base de conhecimento do time de RevOps & Partnerships. Vive no GitHub (`cerebro_revops_01`) e é sincronizado automaticamente com o Confluence (espaço **Ops & Analytics → Partnerships Ops & Analytics**) a cada `git push`.
 
 Qualquer `.md` modificado dentro de `cerebro/` ou `onboarding/` é publicado no Confluence sem ação manual.
 
 ---
 
-## O que pertence ao Cérebro
+## O que pertence ao Partnerships Ops & Analytics
 
 | Entra | Não entra |
 | :--- | :--- |
@@ -94,5 +94,5 @@ Dê comandos diretos e contextuais. Exemplos:
 
 ## Regra de ouro
 
-> O Cérebro não precisa ser completo. Precisa ser **confiável**.  
+> O repositório não precisa ser completo. Precisa ser **confiável**.  
 > Informação desatualizada é pior do que informação ausente.

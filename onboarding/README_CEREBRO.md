@@ -1,4 +1,4 @@
-# Cérebro RevOps
+# Partnerships Ops & Analytics
 
 Bem-vindo ao repositório central de inteligência da área de RevOps & Partnerships. Este não é apenas um backup de arquivos, mas uma **Infraestrutura de Conhecimento** desenhada para ser lida e executada por humanos e IAs.
 
@@ -28,7 +28,7 @@ Operamos sob uma tríade que garante que o conhecimento se transforme em ação:
 1. **Markdown First:** Todos os arquivos devem ser `.md`. Use cabeçalhos (`#`, `##`), tabelas e listas para facilitar a leitura por IAs.
 2. **Atomicidade:** Um assunto, um arquivo. Evite arquivos gigantes; prefira documentos específicos e bem nomeados.
 3. **Versionamento:** Toda mudança significativa deve ser enviada ao GitHub via commit com mensagens claras (ex: `feat: add contexto tech-partners`).
-4. **Single Source of Truth (SSOT):** Se uma regra de negócio mudou no HubSpot ou na estratégia da diretoria, o arquivo correspondente no Cérebro **deve** ser atualizado imediatamente.
+4. **Single Source of Truth (SSOT):** Se uma regra de negócio mudou no HubSpot ou na estratégia da diretoria, o arquivo correspondente em Partnerships Ops & Analytics **deve** ser atualizado imediatamente.
 
 Para diretrizes completas de governança — o que documentar, como estruturar e cadência de atualização — veja `onboarding/governanca_cerebro.md`.
 
@@ -39,8 +39,8 @@ Para diretrizes completas de governança — o que documentar, como estruturar e
 | Ferramenta | Papel |
 | :--- | :--- |
 | **GitHub** | Source of truth. Controle de versão e histórico institucional. Todo conteúdo nasce aqui. |
-| **Confluence** | Publicação automática. Cada push no GitHub sincroniza as páginas em Ops & Analytics > Cerebro RevOps. |
-| **Claude Code** | IDE principal para escrita, estruturação e atualização do Cérebro. |
+| **Confluence** | Publicação automática. Cada push no GitHub sincroniza as páginas em Ops & Analytics > Partnerships Ops & Analytics. |
+| **Claude Code** | IDE principal para escrita, estruturação e atualização do repositório. |
 | **Make / N8N** | Orquestradores que executam as Skills baseadas nestas regras. |
 
-> O Google Drive não é mais utilizado como repositório do Cérebro. O GitHub é a fonte e o Confluence é a visualização.
+> O Google Drive não é mais utilizado como repositório. O GitHub é a fonte e o Confluence é a visualização.
